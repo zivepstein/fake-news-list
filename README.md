@@ -12,5 +12,5 @@ Here we outline the methodology we used to create our list of hyper-partisan, sa
 
 5. Politifact produced [a list of 330 fake news sites](http://www.politifact.com/punditfact/article/2017/apr/20/politifacts-guide-fake-news-websites-and-what-they/). It is contained in a file called `Fpolifact.csv`. We counted a domain as SATIRE if it marked as parody, and as FAKE if it was marked as fake news or imposter sites. 
 
-Next, we take these 5 lists and perform an outer join on url. We then compute a sum of FAKE, SATIRE, and HYPERPARTISAN that is a total score of each across the 5 lists (so the maximum score is 5). We also compute a general COUNT, which is the number of times a given domain occurs across the all lists. After the join, our final list contains 1790 sites.
+Next, we take these 5 lists and perform an outer join on url. We then compute a sum of FAKE, SATIRE, and HYPERPARTISAN that is a total score of each across the 5 lists (so the maximum score is 5). We also compute a general COUNT, which is the number of times a given domain occurs across the all lists. After the join, our final list contains 1790 domains.
 
